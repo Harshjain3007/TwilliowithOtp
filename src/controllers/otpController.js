@@ -9,11 +9,11 @@ const getOtp=async function(req,res){
   try{
     let data =req.body
     const twilio = require('twilio');
-const accountSid = 'AC598c97fc17fab9816d7dd99173a73e7a';
-const authToken = '2484b072d13d50c10d74c6ee699c9894';
+const accountSid = '';
+const authToken = '';
 const client = twilio(accountSid, authToken);
 
-const fromNumber = '+12762779956';
+const fromNumber = '';
 const toNumber = req.body.phone;
 const otp = Math.floor(100000 + Math.random() * 900000); // Generate a random OTP
 
